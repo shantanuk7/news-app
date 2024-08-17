@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "commonjs",
+      "strict": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./dist",
+      "typeRoots": [
+        "./node_modules/@types",
+        "./src/types",
+      ],
+      "types": ["node", "express"]
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/types/**/*.d.ts", "src/helper/db/db.ts",
+    ],
+    "exclude": ["node_modules"]
+  }

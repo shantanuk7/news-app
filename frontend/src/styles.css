@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import 'ngx-toastr/toastr';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { 
+    :root {
+        --color-background: #242424;
+        --color-foreground: #373737;
+        --color-primary-text: #C3C3C3;
+        --color-secondary-text: #C09437;
+    }
+    html {
+        font-family: "Inter", sans-serif;
+        background-color: var(--color-background);
+      }
+
+}
+
+.scrollbar-hide {
+    @apply overflow-hidden; 
+  }
+  
+  .scrollbar-custom {
+    @apply scrollbar-thin scrollbar-thumb-primary scrollbar-track-background;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-2xl border-2 border-background;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary;
+  }
+  
+
